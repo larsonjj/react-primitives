@@ -1,6 +1,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const { VrButton } = require('react-vr');
+const createClass = require('create-react-class');
 
 const InsetPropType = PropTypes.shape({
   top: PropTypes.number,
@@ -54,7 +55,7 @@ const Touchable = (
   TouchableMixin,
 ) => {
   // eslint-disable-next-line react/prefer-es6-class
-  return React.createClass({
+  return createClass({
     displayName: 'Touchable',
     propTypes: {
       accessible: PropTypes.bool,
